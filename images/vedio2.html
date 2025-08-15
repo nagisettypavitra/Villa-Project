@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Section with Video and Stats</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Hero Background Section */
+  .vedio-hero {
+    position: relative;
+    height: 400px;
+    background: url('../images/video-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .hero::after {
+   
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content span {
+    color: #ff5b5b;
+    font-size: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Video Section (Overlapping Image) */
+  .video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .video-container {
+    position: relative;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  .video-container img {
+    width: 100%;
+    height: 350px;
+    display: block;
+  }
+
+  /* Play Button (Circular) */
+  .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, white 40%, #ff5b5b 41%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.play-button::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #ff5b5b;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 5px;
+}
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+  /* Stats Section */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.stat-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #ffeaea;
+  padding: 15px 30px;
+  border-radius: 10px;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff5b5b; /* red color for numbers */
+  margin-right: 35px;
+  margin-left: 15px;
+}
+
+.stat-text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.stat-dot {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #ff5b5b;
+  border-radius: 50%;
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Hero Background -->
+  <section class="vedio-hero">
+    <div class="hero-content">
+      <span>Video View</span>
+      <h1>Get Closer View &<br>Different Feeling</h1>
+    </div>
+  </section>
+
+  <!-- Overlapping Video Section -->
+  <section class="video-section">
+    <div class="video-container">
+      <img src="../images/video-frame.jpg" alt="Video Thumbnail">
+      <a href="" target="_blank" class="play-button"></a>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <div class="stats-container">
+  <div class="stat-box">
+    <span class="stat-number">34</span>
+    <span class="stat-text">Buildings<br>Finished Now</span>
+    <span class="stat-dot"></span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number">12</span>
+    <span class="stat-text">Years<br>Experience</span>
+    <span class="stat-dot"></span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number">24</span>
+    <span class="stat-text">Awards<br>Won 2023</span>
+    <span class="stat-dot"></span>
+  </div>
+</div>
+
+
+</body>
+</html>

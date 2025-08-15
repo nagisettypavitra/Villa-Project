@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Property</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Header background */
+     .header-section {
+    background: url('./images/page-heading-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+  }
+  .propdetail-text {
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .title-text {
+    font-size: 36px;
+    font-weight: 700;
+  }
+   
+  .property-card {
+      width: 250px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .icon-text {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 15px;
+    }
+    .icon-text i {
+      font-size: 24px;
+      color: #ff5722;
+    }
+    /* FAQ styles */
+    .faq label {
+      display: block;
+      padding: 10px;
+      background: #f8f9fa;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      color: black;
+    }
+    .faq input[type="radio"] {
+      display: none;
+    }
+    /* Active question text turns white */
+    .faq input[type="radio"]:checked + label {
+      color: orangered;
+    }
+    /* Drop-down animation */
+    .faq .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 10px;
+      background: white;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .faq input[type="radio"]:checked + label + .answer {
+      max-height: 300px; /* enough for text */
+      padding: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="header-section d-flex flex-column justify-content-center align-items-center">
+  <p class="propdetail-text">HOME / SINGLE PROPERTY</p>
+  <h1 class="title-text">SINGLE PROPERTY</h1>
+</section>
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Left Image -->
+      <div class="col-md-8">
+        <img src="./images/single-property.jpg" class="img-fluid rounded" alt="Property">
+      </div>
+      <!-- Right Info Card -->
+      <div class="col-md-4">
+        <div class="property-card">
+          <div class="icon-text">
+            <i class="fas fa-ruler-combined"></i>
+            <div>
+              <strong>450 m2</strong><br>Total Flat Space
+            </div>
+          </div>
+          <div class="icon-text">
+            <i class="fas fa-file-contract"></i>
+            <div>
+              <strong>Contract</strong><br>Contract Ready
+            </div>
+          </div>
+          <div class="icon-text">
+            <i class="fas fa-credit-card"></i>
+            <div>
+              <strong>Payment</strong><br>Payment Process
+            </div>
+          </div>
+          <div class="icon-text">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <strong>Safety</strong><br>24/7 Under Control
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Property Info -->
+    <span class="badge bg-danger">Appartment</span>
+    <h3 class="mt-3">24 New Street Miami, OR 24560</h3>
+    <p class="mt-3">
+      Get the <strong>best villa agency</strong> HTML CSS Bootstrap Template for your company website. SRINIVASA provides you the 
+      <a href="#">best service</a> in the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus vel aut dolores quisquam doloribus, cupiditate laborum accusantium. Est dolorum delectus nesciunt velit repudiandae placeat temporibus nostrum omnis accusamus magni?
+    </p>
+    
+
+    <!-- FAQ Section -->
+    <div class="faq mt-4">
+      <input type="radio" name="faq" id="faq1">
+      <label for="faq1">Best useful links?</label>
+      <div class="answer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae aliquam voluptatum tempora distinctio blanditiis rem quos porro facilis architecto nesciunt soluta incidunt, placeat, optio mollitia deserunt, quidem animi quas.
+      </div>
+
+      <input type="radio" name="faq" id="faq2">
+      <label for="faq2">How does this work?</label>
+      <div class="answer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quo quibusdam cupiditate nam facere! Sint, aperiam minima! Ullam rem atque eligendi voluptatem eaque iusto amet ipsa? Quidem commodi dolor neque.
+      </div>
+
+      <input type="radio" name="faq" id="faq3">
+      <label for="faq3">Why is Villa the best?</label>
+      <div class="answer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusantium eos beatae, molestias quia inventore officia nulla consequuntur quam id, dolorem omnis saepe aliquid libero iste odit ea error officiis.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
