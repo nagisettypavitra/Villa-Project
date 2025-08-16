@@ -94,43 +94,65 @@
     }
 
     /* Schedule a visit button */
-    .visit-btn {
-        display: inline-flex;
-        align-items: center;
-        background-color: black;
-        color: var(--brand-orange);
-        border: none;
+   .visit-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    color: var(--brand-orange);
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+}
 
-       
-        border-radius: 25px;
-        overflow: hidden;
-        padding: 0;
-        text-decoration: none;
-    }
-    .visit-btn-icon {
-        background-color: var(--brand-orange);
-        color: white;
-        padding: 8px 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-    .visit-btn-text {
-        padding: 8px 15px;
-        font-weight: 500;
-        color: #e74c3c;
-    }
-    .visit-btn:hover .visit-btn-icon {
-        background-color: var(--brand-orange-dark);
-        
-    }
+.visit-btn-icon {
+    background-color: var(--brand-orange);
+    color: white;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.visit-btn-text {
+    padding: 8px 15px;
+    font-weight: 500;
+    color: var(--brand-orange); /* unified */
+}
+
+.visit-btn:hover {
+    background-color: black;
+}
+
+.visit-btn:hover .visit-btn-icon {
+    background-color: orangered;
+}
+
+.visit-btn:hover .visit-btn-text {
+    color: var(--brand-orange);
+}
+
+/* Prevent white bg on click/focus */
+.visit-btn:focus,
+.visit-btn:active {
+    background-color: black;
+    outline: none;
+}
+
+
+
+
+
+
+
     .villa-footer {
-      margin-top: auto;    /* pushes footer to bottom when content is short */
-  background-color: #000;  /* Black background */
-  color: #fff;             /* White text */
+      margin-top: auto;   
+  background-color: #000;  
+  color: #fff;            
   text-align: center;
   padding: 20px 0;
   width: 100%;
@@ -149,8 +171,48 @@ html, body {
 }
 
 .content {
-  flex: 1; /* pushes footer down */
+  flex: 1; 
 }
+.contact-header {
+      background: url('./images/page-heading-bg.jpg') center/cover no-repeat; /* Replace with actual image */
+      padding: 80px 0;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .contact-header h1 {
+      font-weight: bold;
+    }
+    .pagination {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.pagination a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1a;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.pagination a.active {
+  background: #f24c27;
+}
+
+.pagination a:hover {
+  background: #444;
+}
+
 
 
 
@@ -208,6 +270,12 @@ html, body {
     </div>
   </div>
 </nav>
+<section class="contact-header">
+    <div class="container">
+      <h5 class="text-uppercase small">Home / Properties</h5>
+      <h1>Properties</h1>
+    </div>
+  </section>
 
 <div class="container py-5">
     <div class="text-center mb-5">
@@ -398,6 +466,14 @@ html, body {
     </div>
 </div>
 
+<div class="pagination">
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#">&raquo;</a>
+  </div>
+
+
   <!-- Footer OUTSIDE of content -->
   <footer class="villa-footer">
     <div class="footer-content">
@@ -406,6 +482,9 @@ html, body {
     </div>
   </footer>
 
+   
 
  </body>
   </html>
+
+
