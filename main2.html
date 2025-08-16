@@ -103,9 +103,13 @@ align-items: center;
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 40px;
+  padding: 0;
   background-color: #fff;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  overflow-x: hidden; 
 }
 
 .container {
@@ -125,10 +129,10 @@ body {
 }
 
 .image-container img {
-  width: 100%;          /* keeps width inside container */
-  height: 400px;        /* increase or decrease as you like */
+  width: 100%;          
+  height: 400px;       
   object-fit: cover;
-  border-radius: 10px;    /* crops edges to fill space without distortion */
+  border-radius: 10px;   
 }
 
 
@@ -217,7 +221,7 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
 .heading-line {
   display: flex;
   align-items: center;
-  gap: 8px; /* space between | FEATURED and heading */
+  gap: 8px; 
 }
 
 .featured {
@@ -383,7 +387,7 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
 .stat-number {
   font-size: 30px;
   font-weight: bold;
-  color: #ff5b5b; /* red color for numbers */
+  color: #ff5b5b; 
   margin-right: 35px;
   margin-left: 15px;
 }
@@ -595,7 +599,7 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
 
 
   .properties-section {
-  display: block; /* Break away from global flex-row */
+  display: block; 
   width: 100%;
   text-align: center;
   margin: 40px auto;
@@ -677,11 +681,7 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
         font-size: 14px;
     }
 
-  /* Section title */
-   /* CONTACT SECTION FIX */
-/* Ensure contact page layout stays side-by-side */
-/* CONTACT SECTION FULL STYLING */
-
+  
 /* Header styling */
 .info-form-container {
   display: flex;
@@ -765,7 +765,7 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
   cursor: pointer;
 }
 
-/* Layout control - keep side-by-side on desktop */
+
 .contact-section .row {
   display: flex !important;
   flex-wrap: nowrap !important;
@@ -779,7 +779,6 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
 }
 .contact-section {
   width: 100%;
-  padding: 0 20px; /* optional side padding */
 }
 
 .container-fluid {
@@ -798,33 +797,44 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
   }
 }
 html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
+  height: 100%;        /* allow full height */
+  margin: 0;           /* remove default gaps */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+}
+
+.villa-main {
+  flex: 1;             /* push footer down */
 }
 
 .villa-footer {
-  margin-top: auto;        /* pushes footer to bottom when content is short */
-  background-color: #000;  /* Black background */
-  color: #fff;             /* White text */
-  text-align: center;
-  padding: 20px 0;
   width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
 }
 
 
 
 
 
+    
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
 </style>
 </head>
+
+
 <body>
 
+
+<header class="fixed-top">
 <!-- Top Bar -->
 <div class="top-bar bg-white border-bottom py-1 small">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -869,7 +879,9 @@ body {
     </div>
   </div>
 </nav>
+</header>
 
+<main>
 <section class="hero">
   <div class="hero-left">
     <div class="left-text">
@@ -1246,21 +1258,19 @@ body {
 
     </div>
   </div>
+
 </section>
+</main>
+
 <footer class="villa-footer">
-  <div class="footer-content">
-    <p>Copyright©  2025 SRINIVASA Villa Agency co.,Ltd. All rights reserved.Design: Pavitra Nagisetty</p>
-  </div>
-</footer>
+    <p>
+      Copyright © 2025 SRINIVASA Villa Agency Co., Ltd.
+      All rights reserved. | Design: Pavitra Nagisetty
+    </p>
+  </footer>
 
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-
 
 
 
