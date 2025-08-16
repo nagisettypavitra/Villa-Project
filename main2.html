@@ -67,18 +67,21 @@
     .visit-btn:hover .visit-btn-icon {
         background-color: var(--brand-orange-dark);
     }
+
+
     .hero{
-      display: flex;
+     display: flex;
       height: 100vh;
     }
-    .hero-left{
-   flex: 2;
+   .hero-left{
+   flex: 1;
    display: flex;
    background: url('./images/banner-01.jpg') center/cover no-repeat;
    align-items: center;
    justify-content: center;
    color: white;
    position: relative;
+   height: 100vh;
 } 
 .left-text{
 background: rgba(0, 0, 0, 0);
@@ -230,7 +233,6 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
   font-size: 28px;
   font-weight: 700;
 }
-
 
 
 
@@ -795,13 +797,28 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
     flex: 0 0 100% !important;
   }
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .villa-footer {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  margin-top: auto;        /* pushes footer to bottom when content is short */
+  background-color: #000;  /* Black background */
+  color: #fff;             /* White text */
   text-align: center;
   padding: 20px 0;
-  margin: 0px;
+  width: 100%;
 }
+
+
+
 
 
 </style>
