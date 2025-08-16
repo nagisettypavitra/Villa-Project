@@ -121,10 +121,38 @@
     .visit-btn-text {
         padding: 8px 15px;
         font-weight: 500;
+        color: #e74c3c;
     }
     .visit-btn:hover .visit-btn-icon {
         background-color: var(--brand-orange-dark);
+        
     }
+    .villa-footer {
+      margin-top: auto;    /* pushes footer to bottom when content is short */
+  background-color: #000;  /* Black background */
+  color: #fff;             /* White text */
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin-bottom: 0;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* pushes footer down */
+}
+
+
 
 
 
@@ -133,6 +161,9 @@
 </style>
 </head>
 <body>
+    <div class="wrapper">
+    <div class="content">
+
     <!-- Top Bar -->
 <div class="top-bar bg-white border-bottom py-1 small">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -361,4 +392,20 @@
                     <div class="col-6">Floor: 2</div>
                     <div class="col-6">Parking: <span>6 spots</span></div>
                 </div>
-                <button class="btn btn-schedule w-100">Schedule a visit</b
+                <button class="btn btn-schedule w-100">Schedule a visit</button>
+              </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer OUTSIDE of content -->
+  <footer class="villa-footer">
+    <div class="footer-content">
+      <p>Copyright© 2025 SRINIVASA Villa Agency co.,Ltd. 
+      All rights reserved. Design: Pavitra Nagisetty</p>
+    </div>
+  </footer>
+
+
+ </body>
+  </html>
