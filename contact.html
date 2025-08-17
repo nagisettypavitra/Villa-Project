@@ -13,7 +13,7 @@
     }
      
     .contact-header {
-      background: url('./images/contact-bg.jpg') center/cover no-repeat; /* Replace with actual image */
+      background: url('./images/page-heading-bg.jpg') center/cover no-repeat; /* Replace with actual image */
       padding: 80px 0;
       color: white;
       text-align: center;
@@ -109,6 +109,23 @@
     .visit-btn:hover .visit-btn-icon {
         background-color: var(--brand-orange-dark);
     }
+
+.btn.btn-dark.rounded-pill.px-4 {
+  background-color: #111 !important;  /* default black */
+  color: #fff !important;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-dark.rounded-pill.px-4:hover {
+  background-color: #e63946 !important;  /* orange-red hover */
+  color: #fff !important;
+}
+
+
+
+
+
 
 
 
@@ -217,7 +234,7 @@
                <label class="form-label">Message</label>
               <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Send Message</button>
+              <button type="submit" class="btn btn-dark rounded-pill px-4">Send Message</button>
           </form>
         </div>
       </div>
