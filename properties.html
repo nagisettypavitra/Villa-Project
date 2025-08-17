@@ -12,6 +12,7 @@
     body {
         background-color: #fff;
         font-family: Arial, sans-serif;
+       
     }
     .property-card {
         border-radius: 15px;
@@ -142,14 +143,7 @@
     background-color: black;
     outline: none;
 }
-
-
-
-
-
-
-
-    .villa-footer {
+.villa-footer {
       margin-top: auto;   
   background-color: #000;  
   color: #fff;            
@@ -158,12 +152,11 @@
   width: 100%;
   margin-bottom: 0;
 
-}
-html, body {
+  html, body {
   height: 100%;
-  margin: 0;
 }
 
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -212,6 +205,10 @@ html, body {
 .pagination a:hover {
   background: #444;
 }
+header{
+    margin-top: 0px;
+    padding: 0px;
+}
 
 
 
@@ -225,7 +222,7 @@ html, body {
 <body>
     <div class="wrapper">
     <div class="content">
-
+<header>
     <!-- Top Bar -->
 <div class="top-bar bg-white border-bottom py-1 small">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -245,7 +242,7 @@ html, body {
 </div>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white ">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">SRINIVASA VILLA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -253,9 +250,9 @@ html, body {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item me-lg-3"><a class="nav-link " href="./main2.html">Home</a></li>
-        <li class="nav-item me-lg-3"><a class="nav-link" href="./properties-final.html">Properties</a></li>
-        <li class="nav-item me-lg-3"><a class="nav-link" href="./propertydetail.html">Property-Details</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link " href="./Home.html">Home</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link" href="./properties.html">Properties</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link" href="./propertydetail.html">Property Details</a></li>
         <li class="nav-item me-lg-3"><a class="nav-link" href="./contact.html">Contact</a></li>
        <li class="nav-item position-relative" style="width: auto;">
   <button class="visit-btn ms-lg-3 mb-0" style="position: relative; z-index: 1;">
@@ -270,6 +267,7 @@ html, body {
     </div>
   </div>
 </nav>
+</header>
 <section class="contact-header">
     <div class="container">
       <h5 class="text-uppercase small">Home / Properties</h5>

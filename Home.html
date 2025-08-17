@@ -42,8 +42,6 @@
         background-color: black;
         color: white;
         border: none;
-
-       
         border-radius: 25px;
         overflow: hidden;
         padding: 0;
@@ -73,6 +71,7 @@
     .hero{
      display: flex;
       height: 100vh;
+      margin: 0px;
     }
    .hero-left{
    flex: 1;
@@ -101,17 +100,7 @@ align-items: center;
 }
 
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-  overflow-x: hidden; 
-}
+
 
 .container {
   display: flex;
@@ -822,11 +811,7 @@ html, body {
 
     
 
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
+
 
 </style>
 </head>
@@ -835,7 +820,7 @@ html, body {
 <body>
 
 
-<header class="fixed-top">
+
 <!-- Top Bar -->
 <div class="top-bar bg-white border-bottom py-1 small">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -854,8 +839,7 @@ html, body {
   </div>
 </div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">SRINIVASA VILLA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -863,9 +847,9 @@ html, body {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item me-lg-3"><a class="nav-link " href="./main2.html">Home</a></li>
-        <li class="nav-item me-lg-3"><a class="nav-link" href="./properties-final.html">Properties</a></li>
-        <li class="nav-item me-lg-3"><a class="nav-link" href="./propertydetail.html">Property-Details</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link " href="./Home.html">Home</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link" href="./properties.html">Properties</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link" href="./propertydetail.html">Property Details</a></li>
         <li class="nav-item me-lg-3"><a class="nav-link" href="./contact.html">Contact</a></li>
        <li class="nav-item position-relative" style="width: auto;">
   <button class="visit-btn ms-lg-3 mb-0" style="position: relative; z-index: 1;">
@@ -880,7 +864,7 @@ html, body {
     </div>
   </div>
 </nav>
-</header>
+
 
 <main>
 <section class="hero">
