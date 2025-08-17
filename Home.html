@@ -820,9 +820,20 @@ html, body {
 }
 
 .btn-custom:hover {
-  background: #ff593cd0;    
+  background: #ff593cfd;    
   color: #fff;
 }
+
+form.contact-form label.form-label {
+  text-align: left !important;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+
 
 
 
@@ -838,6 +849,7 @@ html, body {
 
 
 <body>
+
 
 
 
@@ -1251,18 +1263,33 @@ html, body {
       </div>
 
       <!-- Right Column -->
-      <div class="col-lg-6 contact-right">
-        <form class="contact-form">
-          <input type="text" class="form-control" placeholder="Your Name..." required>
-          <input type="email" class="form-control" placeholder="Your E-mail..." required>
-          <input type="text" class="form-control" placeholder="Subject..." required>
-          <textarea class="form-control" rows="6" placeholder="Your Message"></textarea>
-          
-        </form>
+     
+        <div class="col-lg-6">
+          <form class="p-4 bg-white shadow-sm rounded">
+            <div class="mb-3">
+               <label class="form-label" style="text-align:left; display:block;">Full Name</label>
+              <input type="text" class="form-control" placeholder="Your Name..." required>
+            </div>
+            <div class="mb-3">
+             <label class="form-label" style="text-align:left; display:block;">E-mail</label> 
+              <input type="email" class="form-control" placeholder="Your E-mail..." required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" style="text-align:left; display:block;">Subject</label>
+              <input type="text" class="form-control" placeholder="Subject..." required>
+            </div>
+            <div class="mb-3">
+             <label class="form-label" style="text-align:left; display:block;">Message</label> 
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+             <button type="submit" class="btn btn-custom">Send Message</button>
+          </form>
+        </div>
       </div>
 
     </div>
   </div>
+  
 
 </section>
 </main>
