@@ -708,7 +708,11 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
     text-align: center;
     margin-top: 150px;
   }
-
+.contact-content{
+  position: relative;
+  left: 280px;
+  top: -120px;
+}
   .hero::after {
    
     position: absolute;
@@ -716,12 +720,14 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
     background: rgba(0, 0, 0, 0);
   }
 
-.contact-section {
+.contact-section{
     display: flex;
     justify-content: center;
-    margin-top: 550px;
+    margin-top: 450px;
+    left: -190px;
     position: relative;
     z-index: 2;
+   
   }
 /* Map */
 .contact-map {
@@ -859,7 +865,7 @@ form.contact-form label.form-label {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item me-lg-3"><a class="nav-link " href="./Home.html"><span style="color: #f15a24;">Home</span></a></li>
-        <li class="nav-item me-lg-3"><a class="nav-link" href="./properties.html">Properties</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link" href="./properties.html">Properties</span></a></li>
         <li class="nav-item me-lg-3"><a class="nav-link" href="./propertydetail.html">Property Details</a></li>
         <li class="nav-item me-lg-3"><a class="nav-link" href="./contact.html">Contact</a></li>
        <li class="nav-item position-relative" style="width: auto;">
@@ -1210,8 +1216,15 @@ form.contact-form label.form-label {
 
 
 
-<section class="contact-hero">
-  <div class="contact-section">
+
+   <!-- Hero Background -->
+  <section class="contact-hero">
+    <div class="contact-content">
+       <p class="text-danger fw-semibold text-uppercase">| CONTACT US</p>
+      <h1>Get In Touch With<br>Our Agents</h1>
+    </div>
+
+<div class="contact-section">
   <div class="row">
  
       
@@ -1266,7 +1279,8 @@ form.contact-form label.form-label {
 
    </div>
   </div>
-  </div>
+
+
 </section>
 </main>
 
