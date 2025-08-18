@@ -66,32 +66,49 @@
         background-color: var(--brand-orange-dark);
        
     }
+.hero {
+  display: flex;
+  min-height: 100vh;    
+  margin: 0;
+  width: 100%;          
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: url('./images/banner-01.jpg') center/cover no-repeat;
+  padding: 2rem;
+  text-align: center;
+}
+
+.left-text h2 {
+  font-size: 3rem;     
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.span-box {
+  background: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
 
 
-    .hero{
-     display: flex;
-      height: 100vh;
-      margin: 0px;
-    }
-   .hero-left{
-   flex: 1;
-   display: flex;
-   background: url('./images/banner-01.jpg') center/cover no-repeat;
-   align-items: center;
-   justify-content: center;
-   color: white;
-   position: relative;
-   height: 100vh;
-} 
-.left-text{
+
+.left-tex{
 background: rgba(0, 0, 0, 0);
 align-items: center;
 }
-.left-text h2{
+.left-tex h2{
   text-align: left;
   font-size: 50px;
 }
-.span-box{
+.span-bo{
   background-color: white;
   padding: 5px 12px;
   border-radius: 3px;
@@ -753,6 +770,10 @@ input[type="radio"]:checked + .accordion-label + .accordion-content {
   resize: none;
   height: 120px;
 }
+.deal-header h2{
+  font-size: 35px;
+  color: #000;
+}
 
 /* Button */
 .contact-form button {
@@ -858,7 +879,7 @@ form.contact-form label.form-label {
         <li class="nav-item me-lg-3"><a class="nav-link " href="./Home.html"><span style="color: #f15a24;">Home</span></a></li>
         <li class="nav-item me-lg-3"><a class="nav-link" href="./properties.html">Properties</span></a></li>
         <li class="nav-item me-lg-3"><a class="nav-link" href="./propertydetail.html">Property Details</a></li>
-        <li class="nav-item me-lg-3"><a class="nav-link" href="./contact.html">Contact</a></li>
+        <li class="nav-item me-lg-3"><a class="nav-link" href="./contact.html">Contact us</a></li>
        <li class="nav-item position-relative" style="width: auto;">
   <button class="visit-btn ms-lg-3 mb-0" style="position: relative; z-index: 1;">
     <span class="visit-btn-icon"><i class="fa-solid fa-calendar-alt"></i></span>
@@ -891,7 +912,7 @@ form.contact-form label.form-label {
 
   <div class="container">
     <div class="feautured_img">
-      <img src="../PROJECT/images/banner-02.jpg" alt="">
+      <img class="image-fluid"  src="../PROJECT/images/banner-02.jpg" alt="">
     </div>
     <div>
       <img src="" alt="">
@@ -1079,7 +1100,7 @@ form.contact-form label.form-label {
     </div>
  
 
-    
+  
     <div class="row g-4">
 
         <!-- Card 1 -->
